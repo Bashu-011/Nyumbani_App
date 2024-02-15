@@ -29,14 +29,12 @@ function Home() {
         <div style={{ textAlign: 'left', padding: '20px', maxWidth: '600px' }}>
            <h1 style={{ textAlign: 'left', fontSize: '35px', fontWeight: 'bold', marginBottom: '10px', color: '#00bfff' }}><strong>Property Description.</strong></h1>
              <p style={{ textAlign: 'left', fontSize: '16px', marginBottom: '20px', color: 'black' }}>
-               Welcome to our exquisite property nestled in the heart of [Location]. 
-               This stunning residence offers a harmonious blend of luxury and comfort, 
-               presenting an unparalleled living experience for discerning individuals and families alike.
+             Welcome to Nyumbani Real Estate, where your dream home awaits. At Nyumbani, we are committed to providing exceptional real estate services tailored to your needs.
              </p>
             <h2 style={{ fontSize: '30px', fontWeight: 'bold', marginBottom: '10px', color: '#00bfff' }}>Great Neighborhood.</h2>
-               <p style={{ fontSize: '16px', marginBottom: '15px', color: 'black' }}>Welcome to a place you can find a great home.</p>
+               <p style={{ fontSize: '16px', marginBottom: '15px', color: 'black' }}>At Nyumbani Real Estate, we believe that a "Great Neighborhood" is more than just a place to live—it's a place to thrive. Experience the difference of living in a community where every day brings new opportunities for growth, connection, and fulfillment. Welcome home to Nyumbani!</p>
            <h2 style={{ fontSize: '30px', fontWeight: 'bold', marginBottom: '10px', color: '#00bfff' }}>Family Friendly.</h2>
-               <p style={{ fontSize: '16px', marginBottom: '15px', color: 'black' }}>Our property is proudly family-friendly, providing a safe and enjoyable environment for families of all sizes.</p>
+               <p style={{ fontSize: '16px', marginBottom: '15px', color: 'black' }}> In Nyumbani Real Estate, being family-friendly is more than just a label—it's a commitment to creating nurturing environments where families can thrive, grow, and create lasting memories together. Welcome to a place where every family feels at home. Welcome to Nyumbani!</p>
         </div>
 
         <div>
