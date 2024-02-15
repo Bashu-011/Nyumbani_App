@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .houses-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .houses {
+    border: 1px solid grey;
+    margin: 1px;
+    width: 500px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(31, 30, 30);
+  }
+  
+  .house-details {
+    /* width: 1000px; */
+    height: 900px;
+    margin: auto;
+    background-color: rgb(43, 40, 40);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    /* text-align: center; */
+  }
+  
+  .details {
+    float: left;
+    /* border: 1px solid white; */
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+  
+    margin: auto;
+    align-items: center;
+  }
+  
+  .reviews-container {
+    height: auto;
+    width: 450px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    background-color: black;
+    margin-top: 20px;
+    padding: 10px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+  }
+  
+  .reviews {
+    margin-bottom: 10px;
+  }
+  
+  textarea {
+    width: 80%;
+    outline: #007bff;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .pricing-close {
+    height: 30px;
+    margin-top: 240px;
+    padding: 30px;
+  }
+  
+  .pricing-close button {
+    margin-top: 5px;
+  }
+  
