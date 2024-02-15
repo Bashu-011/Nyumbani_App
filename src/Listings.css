@@ -1,15 +1,17 @@
 /* Listings.css */
 
+
 .listings-container {
-    max-width: 800px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 20px;
     text-align: center; /* Center content */
+    background-color: #8ec5e0;
   }
   
   .listings-title {
     font-size: 28px;
-    color: #333;
+    color: #090909;
     margin-bottom: 20px;
   }
   
@@ -47,6 +49,7 @@
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: fit-content;
+    background-color: rgb(255, 255, 255);
   }
   
   .listing-card:hover {

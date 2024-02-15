@@ -1,7 +1,8 @@
 // Listings.jsx
-
 import React, { useState, useEffect } from 'react';
 import './Listings.css';
+import NavBar from './NavBar';
+import { Link } from 'react-router-dom';
 
 const Listings = () => {
   const [listings, setListings] = useState([]);
@@ -9,7 +10,9 @@ const Listings = () => {
   const [filter, setFilter] = useState('');
 
   useEffect(() => {
-    // Replace 'http://localhost:3000' with your JSON Server endpoint
+
+    // fetching from db.json.
+
     fetch('http://localhost:3000/listings')
       .then((response) => response.json())
       .then((data) => {
@@ -37,7 +40,9 @@ const Listings = () => {
   };
 
   return (
+
     <div className="listings-container">
+       <NavBar />
       <h2 className="listings-title">Real Estate Listings</h2>
       <div className="search-bar">
         <label htmlFor="filter">Filter by Keyword or Location:</label>
@@ -59,8 +64,11 @@ const Listings = () => {
                 <strong>Location:</strong> {listing.location}
               </p>
               <p>
-                <strong>Price:</strong> ${listing.price}
+                <strong>Price:</strong> {listing.price}
               </p>
+              <Link to={`/property/${listing.id}`}>
+                <button>View Details</button>
+              </Link>
             </div>
           </div>
         ))}

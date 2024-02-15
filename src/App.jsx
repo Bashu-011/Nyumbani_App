@@ -1,19 +1,27 @@
 import React from "react";
+import { BrowserRouter,Routes, Route} from "react-router-dom";
 import Home from "./Home";
 import Footer from "./Footer";
-import HouseDetails from "./HouseDetails";
+import HouseDetailComponent from "./HouseDetails";
 import Listings from "./Listings";
 import Mortgage from "./Mortgage";
+// import {Link} from "react-router-dom"
 
 function App() {
     return (
         <div className="App">
-            <Home />
-            <HouseDetails />
-            <Listings />
-            <Mortgage />
-            <Footer />
+             <BrowserRouter>
+             <Routes>
+             <Route path="/" element={<Home />} />
+            <Route path="/listings" element={<Listings />} /> 
+            <Route path= "/property/:id" element={<HouseDetailComponent />}/>
+            <Route path="/mortgage" element={<Mortgage />} />
+            {/* <Route path="/contact" element={<Contact />} /> */}
+             </Routes>
+            </BrowserRouter>
+             <Footer /> 
         </div>
+      
     );
 }
 
