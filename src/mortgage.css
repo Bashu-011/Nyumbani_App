@@ -12,7 +12,7 @@ body {
   
   .header {
     text-align: center;
-    color: #333;
+    color: #00bfff;
   }
   
   .mortgage-calculator-container {
@@ -30,6 +30,7 @@ body {
     display: block;
     margin-bottom: 5px;
     color: #333;
+    font-weight: 600;
   }
   
   .input-section input[type="number"] {
@@ -41,14 +42,16 @@ body {
   }
   
   .button {
-    background-color: #414241;
-    color: white;
+    background-color: #00bfff;
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-  }
+    margin-top: 20px; /* Adjust the margin-top value to move the button down */
+}
+
   
   .button:hover {
     background-color: #7f807f;
@@ -56,6 +59,8 @@ body {
   
   .output-section {
     text-align: center;
+    color: #00bfff;
+    font-weight: 800;
   }
   
   .output-text {
