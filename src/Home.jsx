@@ -1,19 +1,19 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import houseImage1 from "./images/mansions_main_fin-1.jpg";
-import sittingRoomImage from "./images/sittingroom image.jpg";
-import kitchenImage from "./images/kitchen image.png";
-import homeDesignImage from "./images/home-design.jpg";
-import logoImage from "./images/Logo White.png";
-import image from "./images/Modern-style-study-room-with-recessed-wooden-bookshelves.jpg";
-import imags from "./images/images.jpg";
+import houseImage1 from "./homeImages/mansions_main_fin-1.jpg";
+import sittingRoomImage from "./homeImages/sittingroom image.jpg";
+import kitchenImage from "./homeImages/kitchen image.png";
+import homeDesignImage from "./homeImages/home-design.jpg";
+import logoImage from "./homeImages/Logo White.png";
+import image from "./homeImages/Modern-style-study-room-with-recessed-wooden-bookshelves.jpg";
+import imags from "./homeImages/images.jpg";
 
 
 function Home() {
   return (
     <div>
-      <div style={{ position: 'relative',backgroundColor: 'grey' }}>
+      <div style={{ position: 'relative' }}>
         <img src={houseImage1} alt="House" style={{ width: '100%', maxHeight: '600px', objectFit: 'cover' }} />
         <div style={{ position: 'absolute', top: '-160px', left: '-130px', right: 0, padding: '10px 20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 1000 }}>
           <img src={logoImage} alt="Logo White" width="400px" />

@@ -1,4 +1,5 @@
-import "./assets/footer.css";
+import "./Footer.css";
+
 
 function Footer() {
   return (
@@ -41,11 +42,12 @@ function Footer() {
       </p>
 
       <div className="footer-icons">
-        <a href="#"><i className="fa fa-facebook"></i></a>
-        <a href="#"><i className="fa fa-twitter"></i></a>
-        <a href="#"><i className="fa fa-linkedin"></i></a>
-        <a href="#"><i className="fa fa-snapchat"></i></a>
-      </div>
+         <a href="#"><i className="fa fa-facebook"></i></a>
+         <a href="#"><i className="fa fa-twitter"></i></a>
+         <a href="#"><i className="fa fa-linkedin"></i></a> {/* Use fa-linkedin for LinkedIn */}
+         <a href="#"><i className="fa fa-snapchat-ghost"></i></a> {/* Use fa-snapchat-ghost for Snapchat */}
+     </div>
+
     </div>
   </footer>
   );
