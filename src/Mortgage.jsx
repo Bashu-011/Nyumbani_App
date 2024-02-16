@@ -47,16 +47,25 @@ function MortgageCalculator() {
         </div>
 
         {/* images showing the banks. */}
+        </div>
         <h3>Here are some of our financing partners:</h3>
         <div className='banks'>
+        <a target='blank' href='https://equitygroupholdings.com/ke/borrow/diaspora-residential-mortgage-equity-loans'>
         <img src='src/banks/equity.jpeg'/>
+        </a>
+        <a target='blank' href='https://ke.kcbgroup.com/for-you/get-a-loan/mortgages/home-loan'>
         <img src='src/banks/kcb.png'/>
-       <img src='src/banks/ncba.jpeg'/>
-       <img src='src/banks/WhatsApp Image 2024-02-16 at 12.22.13_98cdfd33.jpg'/>
+        </a>
+        <a target='blank' href='https://ke.ncbagroup.com/loan/own-your-own-home/'>
+        <img src='src/banks/ncba.jpeg'></img>
+        </a>
+        <a target='blank' href='https://www.nssf.or.ke/new-nssf-rates-benefits/'>
+        <img src='https://www.nssf.or.ke/wp-content/uploads/2022/09/cropped-nssf_logo-2.png'></img>
+        </a>
         </div>
       </div>
     </div>
-    </div>
+    
   );
 }
 

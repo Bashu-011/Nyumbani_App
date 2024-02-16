@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Listings.css";
 import { Link } from "react-router-dom";
 import NavBar from "./NavBar";
-import logoImage from "./homeImages/Logo White.png";
+//import logoImage from "./homeImages/Logo White.png";
 
 const Listings = () => {
   const [listings, setListings] = useState([]);

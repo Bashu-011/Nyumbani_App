@@ -9,7 +9,11 @@
       "bathrooms": 3,
       "location": "Westlands",
       "city": "Nairobi",
-      "propertyFeatures": ["Swimming Pool", "Garden", "Parking"],
+      "propertyFeatures": [
+        "Swimming Pool",
+        "Garden",
+        "Parking"
+      ],
       "squareFootage": 3000,
       "contactInformation": {
         "name": "John Doe",
@@ -18,7 +22,6 @@
       },
       "image": "https://images.prop24.com/xqtazogtorkszdydmb6airqxli/Crop237x198"
     },
-    
     {
       "id": "87",
       "title": "Country Farmhouse",
@@ -28,7 +31,11 @@
       "bathrooms": 3,
       "location": "Kiambu",
       "city": "Nairobi",
-      "propertyFeatures": ["Rural Charm", "Acreage", "Barn"],
+      "propertyFeatures": [
+        "Rural Charm",
+        "Acreage",
+        "Barn"
+      ],
       "squareFootage": 3500,
       "contactInformation": {
         "name": "Charles Brown",
@@ -46,7 +53,11 @@
       "bathrooms": 3,
       "location": "Upper Hill",
       "city": "Nairobi",
-      "propertyFeatures": ["City Views", "Luxury Amenities", "Security"],
+      "propertyFeatures": [
+        "City Views",
+        "Luxury Amenities",
+        "Security"
+      ],
       "squareFootage": 2300,
       "contactInformation": {
         "name": "Grace Johnson",
@@ -55,7 +66,6 @@
       },
       "image": "https://images.prop24.com/rbzyiaeeziwswxm6tbzxk7zc5y/Crop237x198"
     },
-    
     {
       "id": "117",
       "title": "Scenic Cottage",
@@ -65,7 +75,11 @@
       "bathrooms": 2,
       "location": "Milimani",
       "city": "Nakuru",
-      "propertyFeatures": ["Mountain Views", "Garden", "Fireplace"],
+      "propertyFeatures": [
+        "Mountain Views",
+        "Garden",
+        "Fireplace"
+      ],
       "squareFootage": 1800,
       "contactInformation": {
         "name": "Linda Brown",
@@ -83,7 +97,11 @@
       "bathrooms": 3,
       "location": "Mawanga",
       "city": "Nakuru",
-      "propertyFeatures": ["Lake Views", "Deck", "Boat Dock"],
+      "propertyFeatures": [
+        "Lake Views",
+        "Deck",
+        "Boat Dock"
+      ],
       "squareFootage": 2800,
       "contactInformation": {
         "name": "Peter Wilson",
@@ -92,7 +110,6 @@
       },
       "image": "https://images.prop24.com/efsf64ac6hpyijbrqmnnm6eotm/Crop237x198"
     },
-  
     {
       "id": "119",
       "title": "Lakeside Bungalow",
@@ -102,7 +119,11 @@
       "bathrooms": 1,
       "location": "Kisian",
       "city": "Kisumu",
-      "propertyFeatures": ["Lakeside Living", "Garden", "Outdoor Lounge"],
+      "propertyFeatures": [
+        "Lakeside Living",
+        "Garden",
+        "Outdoor Lounge"
+      ],
       "squareFootage": 1500,
       "contactInformation": {
         "name": "Sarah White",
@@ -120,7 +141,11 @@
       "bathrooms": 2,
       "location": "Migosi",
       "city": "Kisumu",
-      "propertyFeatures": ["City Center", "Balcony", "Security"],
+      "propertyFeatures": [
+        "City Center",
+        "Balcony",
+        "Security"
+      ],
       "squareFootage": 2000,
       "contactInformation": {
         "name": "Daniel White",
@@ -138,7 +163,11 @@
       "bathrooms": 3,
       "location": "Kabarak",
       "city": "Nakuru",
-      "propertyFeatures": ["Peaceful Surroundings", "Garden", "Fire Pit"],
+      "propertyFeatures": [
+        "Peaceful Surroundings",
+        "Garden",
+        "Fire Pit"
+      ],
       "squareFootage": 2600,
       "contactInformation": {
         "name": "Olivia Brown",
@@ -156,7 +185,11 @@
       "bathrooms": 4,
       "location": "Dunga",
       "city": "Kisumu",
-      "propertyFeatures": ["Lakeside Living", "Infinity Pool", "Boat Dock"],
+      "propertyFeatures": [
+        "Lakeside Living",
+        "Infinity Pool",
+        "Boat Dock"
+      ],
       "squareFootage": 4000,
       "contactInformation": {
         "name": "Sophia Wilson",
@@ -174,7 +207,11 @@
       "bathrooms": 3,
       "location": "Mamboleo",
       "city": "Kisumu",
-      "propertyFeatures": ["City Views", "Rooftop Terrace", "Luxury Finishes"],
+      "propertyFeatures": [
+        "City Views",
+        "Rooftop Terrace",
+        "Luxury Finishes"
+      ],
       "squareFootage": 2200,
       "contactInformation": {
         "name": "Henry Johnson",
@@ -192,7 +229,11 @@
       "bathrooms": 1,
       "location": "Kapsabet",
       "city": "Nandi",
-      "propertyFeatures": ["Forest Views", "Deck", "Fireplace"],
+      "propertyFeatures": [
+        "Forest Views",
+        "Deck",
+        "Fireplace"
+      ],
       "squareFootage": 1500,
       "contactInformation": {
         "name": "Isaac White",
@@ -210,7 +251,11 @@
       "bathrooms": 5,
       "location": "Maasai Mara",
       "city": "Narok",
-      "propertyFeatures": ["Wildlife Views", "Safari Experience", "Pool"],
+      "propertyFeatures": [
+        "Wildlife Views",
+        "Safari Experience",
+        "Pool"
+      ],
       "squareFootage": 6000,
       "contactInformation": {
         "name": "Anna Brown",
@@ -228,7 +273,11 @@
       "bathrooms": 2,
       "location": "Nandi Hills",
       "city": "Nandi",
-      "propertyFeatures": ["Mountain Views", "Fireplace", "Outdoor Patio"],
+      "propertyFeatures": [
+        "Mountain Views",
+        "Fireplace",
+        "Outdoor Patio"
+      ],
       "squareFootage": 1800,
       "contactInformation": {
         "name": "Eva Johnson",
@@ -246,7 +295,11 @@
       "bathrooms": 3,
       "location": "Diani",
       "city": "Kwale",
-      "propertyFeatures": ["Ocean Views", "Infinity Pool", "Private Beach"],
+      "propertyFeatures": [
+        "Ocean Views",
+        "Infinity Pool",
+        "Private Beach"
+      ],
       "squareFootage": 3800,
       "contactInformation": {
         "name": "William Brown",
@@ -264,7 +317,11 @@
       "bathrooms": 2,
       "location": "Karen",
       "city": "Nairobi",
-      "propertyFeatures": ["Open Concept", "Art Studio", "City Views"],
+      "propertyFeatures": [
+        "Open Concept",
+        "Art Studio",
+        "City Views"
+      ],
       "squareFootage": 2000,
       "contactInformation": {
         "name": "Sophie Wilson",
@@ -282,7 +339,11 @@
       "bathrooms": 5,
       "location": "Thika",
       "city": "Nairobi",
-      "propertyFeatures": ["Historic Charm", "Expansive Gardens", "Ballroom"],
+      "propertyFeatures": [
+        "Historic Charm",
+        "Expansive Gardens",
+        "Ballroom"
+      ],
       "squareFootage": 5500,
       "contactInformation": {
         "name": "Oliver Johnson",
@@ -300,7 +361,11 @@
       "bathrooms": 2,
       "location": "Kitisuru",
       "city": "Nairobi",
-      "propertyFeatures": ["Contemporary Design", "Private Garden", "Security"],
+      "propertyFeatures": [
+        "Contemporary Design",
+        "Private Garden",
+        "Security"
+      ],
       "squareFootage": 2200,
       "contactInformation": {
         "name": "Emma Brown",
@@ -318,7 +383,11 @@
       "bathrooms": 1,
       "location": "CBD",
       "city": "Nairobi",
-      "propertyFeatures": ["Central Location", "Security", "Modern Finishes"],
+      "propertyFeatures": [
+        "Central Location",
+        "Security",
+        "Modern Finishes"
+      ],
       "squareFootage": 1200,
       "contactInformation": {
         "name": "Sophia Brown",
@@ -336,7 +405,11 @@
       "bathrooms": 1,
       "location": "Lang'ata",
       "city": "Nairobi",
-      "propertyFeatures": ["Compact Design", "Close to Amenities", "Security"],
+      "propertyFeatures": [
+        "Compact Design",
+        "Close to Amenities",
+        "Security"
+      ],
       "squareFootage": 800,
       "contactInformation": {
         "name": "Daniel Wilson",
@@ -354,7 +427,11 @@
       "bathrooms": 2,
       "location": "Kilimani",
       "city": "Nairobi",
-      "propertyFeatures": ["High-End Finishes", "Balcony", "Swimming Pool"],
+      "propertyFeatures": [
+        "High-End Finishes",
+        "Balcony",
+        "Swimming Pool"
+      ],
       "squareFootage": 1800,
       "contactInformation": {
         "name": "Grace Brown",
@@ -372,7 +449,11 @@
       "bathrooms": 2,
       "location": "Westlands",
       "city": "Nairobi",
-      "propertyFeatures": ["Rooftop Terrace", "City Views", "Modern Design"],
+      "propertyFeatures": [
+        "Rooftop Terrace",
+        "City Views",
+        "Modern Design"
+      ],
       "squareFootage": 2200,
       "contactInformation": {
         "name": "Lucas Johnson",
@@ -390,7 +471,11 @@
       "bathrooms": 2,
       "location": "Karen",
       "city": "Nairobi",
-      "propertyFeatures": ["Green Building", "Energy-Efficient", "Fitness Center"],
+      "propertyFeatures": [
+        "Green Building",
+        "Energy-Efficient",
+        "Fitness Center"
+      ],
       "squareFootage": 1400,
       "contactInformation": {
         "name": "Ava Brown",
@@ -408,7 +493,11 @@
       "bathrooms": 2,
       "location": "Runda",
       "city": "Nairobi",
-      "propertyFeatures": ["Private Garden", "Modern Finishes", "Security"],
+      "propertyFeatures": [
+        "Private Garden",
+        "Modern Finishes",
+        "Security"
+      ],
       "squareFootage": 2000,
       "contactInformation": {
         "name": "Lily Wilson",
@@ -426,7 +515,11 @@
       "bathrooms": 1,
       "location": "Kasarani",
       "city": "Nairobi",
-      "propertyFeatures": ["Tranquil Setting", "Modern Design", "Close to Nature"],
+      "propertyFeatures": [
+        "Tranquil Setting",
+        "Modern Design",
+        "Close to Nature"
+      ],
       "squareFootage": 700,
       "contactInformation": {
         "name": "Oliver Johnson",
@@ -444,7 +537,11 @@
       "bathrooms": 1,
       "location": "Limuru",
       "city": "Kiambu",
-      "propertyFeatures": ["Countryside Charm", "Fireplace", "Scenic Views"],
+      "propertyFeatures": [
+        "Countryside Charm",
+        "Fireplace",
+        "Scenic Views"
+      ],
       "squareFootage": 1000,
       "contactInformation": {
         "name": "Emma Brown",
@@ -462,7 +559,11 @@
       "bathrooms": 3,
       "location": "Nyali",
       "city": "Mombasa",
-      "propertyFeatures": ["Beach Access", "Private Pool", "Ocean Views"],
+      "propertyFeatures": [
+        "Beach Access",
+        "Private Pool",
+        "Ocean Views"
+      ],
       "squareFootage": 2800,
       "contactInformation": {
         "name": "David Wilson",
@@ -480,7 +581,11 @@
       "bathrooms": 2,
       "location": "Muthaiga",
       "city": "Nairobi",
-      "propertyFeatures": ["Duplex Layout", "Balcony", "Security"],
+      "propertyFeatures": [
+        "Duplex Layout",
+        "Balcony",
+        "Security"
+      ],
       "squareFootage": 2200,
       "contactInformation": {
         "name": "Sophie Brown",
@@ -498,7 +603,11 @@
       "bathrooms": 1,
       "location": "CBD",
       "city": "Nairobi",
-      "propertyFeatures": ["Urban Living", "High Ceilings", "Modern Finishes"],
+      "propertyFeatures": [
+        "Urban Living",
+        "High Ceilings",
+        "Modern Finishes"
+      ],
       "squareFootage": 1300,
       "contactInformation": {
         "name": "Ethan Brown",
@@ -516,7 +625,11 @@
       "bathrooms": 2,
       "location": "Karen",
       "city": "Nairobi",
-      "propertyFeatures": ["Serene Environment", "Garden", "Security"],
+      "propertyFeatures": [
+        "Serene Environment",
+        "Garden",
+        "Security"
+      ],
       "squareFootage": 1900,
       "contactInformation": {
         "name": "Lily Brown",
@@ -534,7 +647,11 @@
       "bathrooms": 1,
       "location": "Westlands",
       "city": "Nairobi",
-      "propertyFeatures": ["Sleek Design", "Close to Amenities", "Security"],
+      "propertyFeatures": [
+        "Sleek Design",
+        "Close to Amenities",
+        "Security"
+      ],
       "squareFootage": 700,
       "contactInformation": {
         "name": "Olivia Wilson",
@@ -544,7 +661,7 @@
       "image": "https://images.prop24.com/2ejjax2n3qbkpxx554juikgqq4/Crop237x198"
     },
     {
-      "id":"144",
+      "id": "144",
       "title": "Elegant Apartment",
       "type": "For Rent",
       "price": "Ksh 25,000/month",
@@ -552,7 +669,11 @@
       "bathrooms": 2,
       "location": "Kilimani",
       "city": "Nairobi",
-      "propertyFeatures": ["Sophisticated Style", "Balcony", "Swimming Pool"],
+      "propertyFeatures": [
+        "Sophisticated Style",
+        "Balcony",
+        "Swimming Pool"
+      ],
       "squareFootage": 1500,
       "contactInformation": {
         "name": "Lucas Brown",
@@ -570,7 +691,11 @@
       "bathrooms": 1,
       "location": "Limuru",
       "city": "Kiambu",
-      "propertyFeatures": ["Wooded Setting", "Peaceful Ambiance", "Security"],
+      "propertyFeatures": [
+        "Wooded Setting",
+        "Peaceful Ambiance",
+        "Security"
+      ],
       "squareFootage": 800,
       "contactInformation": {
         "name": "Emma Wilson",
@@ -588,7 +713,11 @@
       "bathrooms": 1,
       "location": "Nakuru",
       "city": "Nakuru",
-      "propertyFeatures": ["Cozy Atmosphere", "Country Living", "Garden"],
+      "propertyFeatures": [
+        "Cozy Atmosphere",
+        "Country Living",
+        "Garden"
+      ],
       "squareFootage": 1000,
       "contactInformation": {
         "name": "Sophie Johnson",
@@ -606,7 +735,11 @@
       "bathrooms": 2,
       "location": "Runda",
       "city": "Nairobi",
-      "propertyFeatures": ["Bright Interiors", "Balcony", "Security"],
+      "propertyFeatures": [
+        "Bright Interiors",
+        "Balcony",
+        "Security"
+      ],
       "squareFootage": 1800,
       "contactInformation": {
         "name": "Daniel Brown",
@@ -624,7 +757,11 @@
       "bathrooms": 2,
       "location": "Naivasha",
       "city": "Nakuru",
-      "propertyFeatures": ["Lake Views", "Modern Finishes", "Security"],
+      "propertyFeatures": [
+        "Lake Views",
+        "Modern Finishes",
+        "Security"
+      ],
       "squareFootage": 1600,
       "contactInformation": {
         "name": "Ava Brown",
@@ -642,7 +779,11 @@
       "bathrooms": 1,
       "location": "Nakuru",
       "city": "Nakuru",
-      "propertyFeatures": ["City Living", "Gym", "Security"],
+      "propertyFeatures": [
+        "City Living",
+        "Gym",
+        "Security"
+      ],
       "squareFootage": 1200,
       "contactInformation": {
         "name": "Sophia Wilson",
@@ -660,7 +801,11 @@
       "bathrooms": 1,
       "location": "Limuru",
       "city": "Kiambu",
-      "propertyFeatures": ["Wooden Charm", "Nature Retreat", "Security"],
+      "propertyFeatures": [
+        "Wooden Charm",
+        "Nature Retreat",
+        "Security"
+      ],
       "squareFootage": 900,
       "contactInformation": {
         "name": "David White",
@@ -678,7 +823,11 @@
       "bathrooms": 2,
       "location": "Nyali",
       "city": "Mombasa",
-      "propertyFeatures": ["Sea Views", "Beach Access", "Swimming Pool"],
+      "propertyFeatures": [
+        "Sea Views",
+        "Beach Access",
+        "Swimming Pool"
+      ],
       "squareFootage": 1600,
       "contactInformation": {
         "name": "Sophie Johnson",
@@ -696,7 +845,11 @@
       "bathrooms": 3,
       "location": "Bamburi",
       "city": "Mombasa",
-      "propertyFeatures": ["Tropical Gardens", "Private Pool", "Security"],
+      "propertyFeatures": [
+        "Tropical Gardens",
+        "Private Pool",
+        "Security"
+      ],
       "squareFootage": 2200,
       "contactInformation": {
         "name": "Daniel Brown",
@@ -714,7 +867,11 @@
       "bathrooms": 1,
       "location": "Diani",
       "city": "Mombasa",
-      "propertyFeatures": ["Beachfront Living", "Garden", "Security"],
+      "propertyFeatures": [
+        "Beachfront Living",
+        "Garden",
+        "Security"
+      ],
       "squareFootage": 1200,
       "contactInformation": {
         "name": "Ava Brown",
@@ -732,7 +889,11 @@
       "bathrooms": 1,
       "location": "Kahawa",
       "city": "Nairobi",
-      "propertyFeatures": ["Urban Living", "Modern Finishes", "Security"],
+      "propertyFeatures": [
+        "Urban Living",
+        "Modern Finishes",
+        "Security"
+      ],
       "squareFootage": 800,
       "contactInformation": {
         "name": "Lucas Wilson",
@@ -750,7 +911,11 @@
       "bathrooms": 2,
       "location": "Nyalani",
       "city": "Mombasa",
-      "propertyFeatures": ["Coastal Living", "Balcony", "Security"],
+      "propertyFeatures": [
+        "Coastal Living",
+        "Balcony",
+        "Security"
+      ],
       "squareFootage": 1500,
       "contactInformation": {
         "name": "Olivia White",
@@ -768,7 +933,11 @@
       "bathrooms": 2,
       "location": "Roysambu",
       "city": "Nairobi",
-      "propertyFeatures": ["Panoramic Views", "Balcony", "Swimming Pool"],
+      "propertyFeatures": [
+        "Panoramic Views",
+        "Balcony",
+        "Swimming Pool"
+      ],
       "squareFootage": 1300,
       "contactInformation": {
         "name": "Emma Wilson",
@@ -786,7 +955,11 @@
       "bathrooms": 2,
       "location": "Mtwapa",
       "city": "Mombasa",
-      "propertyFeatures": ["Seaside Living", "Modern Design", "Security"],
+      "propertyFeatures": [
+        "Seaside Living",
+        "Modern Design",
+        "Security"
+      ],
       "squareFootage": 1800,
       "contactInformation": {
         "name": "Daniel White",
@@ -804,7 +977,11 @@
       "bathrooms": 2,
       "location": "Kisumu",
       "city": "Kisumu",
-      "propertyFeatures": ["Lake Views", "Modern Finishes", "Security"],
+      "propertyFeatures": [
+        "Lake Views",
+        "Modern Finishes",
+        "Security"
+      ],
       "squareFootage": 1400,
       "contactInformation": {
         "name": "Sophia Brown",
@@ -822,7 +999,11 @@
       "bathrooms": 2,
       "location": "Kizingo",
       "city": "Mombasa",
-      "propertyFeatures": ["Evening Views", "Garden", "Security"],
+      "propertyFeatures": [
+        "Evening Views",
+        "Garden",
+        "Security"
+      ],
       "squareFootage": 1600,
       "contactInformation": {
         "name": "Sophie White",
@@ -840,7 +1021,11 @@
       "bathrooms": 1,
       "location": "Kariobangi",
       "city": "Nairobi",
-      "propertyFeatures": ["City Lifestyle", "Modern Design", "Security"],
+      "propertyFeatures": [
+        "City Lifestyle",
+        "Modern Design",
+        "Security"
+      ],
       "squareFootage": 700,
       "contactInformation": {
         "name": "Oliver White",
@@ -850,7 +1035,7 @@
       "image": "https://images.prop24.com/6wrg4etmqmmg4qgwdxsad7wj5y/Crop237x198"
     }
   ],
-  "reviews":[
-      
+  "reviews": [
+  
   ]
 }

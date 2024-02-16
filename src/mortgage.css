@@ -79,11 +79,10 @@ body {
     align-items: center;
   }
   
-  .banks img  {
+  .banks img {
     margin-right: 100px; 
-    width: 200px;
-    height: 120px;
-  
+    width: 300px;
+    height: 150px;
   }
   
   .banks a:last-child {
