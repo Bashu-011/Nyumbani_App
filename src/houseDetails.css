@@ -1,0 +1,81 @@
+
+.house-details {
+  height: auto;
+  margin: 10px auto;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  background-color: #f8fcfe;
+ 
+
+}
+
+.details {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 10px;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.details img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.reviews-container {
+  height: 200px;
+  width: 350px;
+  margin: 20px 10px;
+  background-color: rgb(65, 64, 64);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  color: white;
+}
+
+.all-details {
+  border: 1px solid rgb(232, 229, 229);
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: 1px solid black;
+}
+
+.reviews {
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 80%;
+  outline: #007bff;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #00bfff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.pricing-close {
+  height: 30px;
+  padding: 30px;
+  margin-top: 15%;
+}
+
+.pricing-close button {
+  margin-top: 5px;
+  margin-right: 20px;
+  
+}
