@@ -1,5 +1,6 @@
 import {Link} from "react-router-dom"
 
+// For displaying the navbar
 function NavBar() {
  return (
     <nav style={{ padding:'0 15px', display: 'inlineblock' }}>

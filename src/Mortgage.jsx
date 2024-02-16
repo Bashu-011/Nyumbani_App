@@ -1,6 +1,11 @@
+// importing the necessary dependacies.
+
 import React, { useState } from 'react';
 import './mortgage.css'
+import NavBar from './NavBar';
+import logoImage from "./homeImages/LOGO.png";
 
+// creates dynamic variables using useState hook.
 function MortgageCalculator() {
   const [houseAmount, setHouseAmount] = useState('');
   const [loanTerm, setLoanTerm] = useState('');
@@ -19,7 +24,10 @@ function MortgageCalculator() {
   };
 
   return (
-    <div>
+         <div>
+          <NavBar />
+        <div>
+
       <h1 className="header">Mortgage Calculator</h1>
       <div className="mortgage-calculator-container">
         <div className="input-section">
@@ -37,19 +45,17 @@ function MortgageCalculator() {
           <p>Your Monthly Payment will be:</p>
           <textarea className="output-text" readOnly value={monthlyPayment ? `KES ${monthlyPayment}` : 'Please enter values to calculate.'} />
         </div>
-        <p>Here are some of our financing partners:</p>
+
+        {/* images showing the banks. */}
+        <h3>Here are some of our financing partners:</h3>
         <div className='banks'>
-        <a target='blank' href='https://equitygroupholdings.com/ke/borrow/diaspora-residential-mortgage-equity-loans'>
         <img src='src/banks/equity.jpeg'/>
-        </a>
-        <a target='blank' href='https://ke.kcbgroup.com/for-you/get-a-loan/mortgages/home-loan'>
         <img src='src/banks/kcb.png'/>
-        </a>
-        <a target='blank' href='https://ke.ncbagroup.com/loan/own-your-own-home/'>
-        <img src='src/banks/ncba.jpeg'></img>
-        </a>
+       <img src='src/banks/ncba.jpeg'/>
+       <img src='src/banks/WhatsApp Image 2024-02-16 at 12.22.13_98cdfd33.jpg'/>
         </div>
       </div>
+    </div>
     </div>
   );
 }
