@@ -8,6 +8,8 @@ import homeDesignImage from "./homeImages/home-design.jpg";
 import logoImage from "./homeImages/Logo White.png";
 import image from "./homeImages/Modern-style-study-room-with-recessed-wooden-bookshelves.jpg";
 import imags from "./homeImages/images.jpg";
+import NavBar from "./NavBar";
+import { Link } from "react-router-dom";
 
 
 function Home() {
@@ -15,19 +17,18 @@ function Home() {
     <div>
       <div style={{ position: 'relative' }}>
         <img src={houseImage1} alt="House" style={{ width: '100%', maxHeight: '600px', objectFit: 'cover' }} />
+        <div style={{ position: 'absolute', top: '36%', left: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center', color: 'white', fontSize: '30px' }}>
+        <h2> Discover Your Dream Home with Nyumbani</h2>
+        <p>Your Journey to Extraordinary Living Starts Here!</p>
+      </div>
         <div style={{ position: 'absolute', top: '-160px', left: '-130px', right: 0, padding: '10px 20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 1000 }}>
           <img src={logoImage} alt="Logo White" width="400px" />
-          <nav style={{ padding:'0 15px', display: 'inlineblock' }}>
-          <ul style={{ listStyleType: 'none', margin: 0, padding: 0, display: 'flex', left:'-90px', fontSize: '1.2rem' }}>
-            <li style={{ margin: '0 20px' }}><a href="#" style={{ color: 'white' }}> Home </a></li>
-            <li style={{ margin: '0 20px' }}><a href="#" style={{ color: 'white' }}> Listing </a></li>
-            <li style={{ margin: '0 20px' }}><a href="#" style={{ color: 'white' }}> About </a></li>
-            <li style={{ margin: '0 20px' }}><a href="#" style={{ color: 'white' }}> Contact </a></li>
-          </ul>
-       </nav>
+
+          <NavBar />
+          
         </div>
         <div style={{ textAlign: 'left', padding: '20px', maxWidth: '600px' }}>
-           <h1 style={{ textAlign: 'left', fontSize: '35px', fontWeight: 'bold', marginBottom: '10px', color: '#00bfff' }}><strong>Property Description.</strong></h1>
+           <h1 style={{ textAlign: 'left', fontSize: '35px', fontWeight: 'bold', marginBottom: '10px', color: '#00bfff' }}><strong> Description.</strong></h1>
              <p style={{ textAlign: 'left', fontSize: '16px', marginBottom: '20px', color: 'black' }}>
              Welcome to Nyumbani Real Estate, where your dream home awaits. At Nyumbani, we are committed to providing exceptional real estate services tailored to your needs.
              </p>
@@ -38,7 +39,8 @@ function Home() {
         </div>
 
         <div>
-          <button style={{ 
+          <Link to="/listings">
+          <button  style={{ 
             padding: '10px 20px', 
             fontSize: '1.1rem', 
             backgroundColor: '#00bfff', 
@@ -51,7 +53,7 @@ function Home() {
             top: '103%',
             left: '1%', 
             transform: 'translateY(-50%)', 
-          }}>View Details</button>
+          }}>View Listings </button> </Link>
         </div>
       </div>
       <table style={{ float: 'right', width: '40%', marginRight: '0%', top: '900px', marginTop: '-395px' }}>

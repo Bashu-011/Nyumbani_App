@@ -1,25 +1,37 @@
 import React, { useState, useEffect } from "react";
-//import {useHistory} from "react-router-dom"
+import { useParams, Navigate } from "react-router-dom";
+import "./houseDetails.css"
 
-
-//selectedHouse & onClose is a prop from Gideon's component
-function HouseDetailComponent({ selectedHouse, onClose }) {
+const HouseDetailComponent = () => {
   const [reviews, setReviews] = useState([]);
   const [newReview, setNewReview] = useState("");
- // const history = useHistory();
+
+  const { id } = useParams();
+  const [property, setProperty] = useState(null);
+
+  //const history = useHistory()
+
+  const [redirectToHome, setRedirectToHome] = useState(false);
+  const [redirectToPricing, setRedirectToPricing] = useState(false);
 
   useEffect(() => {
-    if (selectedHouse) {
-      fetch(`http://localhost:3000/reviews?houseId=${selectedHouse.id}`)
-        .then((resp) => resp.json())
-        .then((data) => setReviews(data))
-        .catch((error) => console.error("Error fetching reviews:", error));
-    }
-  }, [selectedHouse]);
+    fetch(`http://localhost:3000/listings/${id}`)
+      .then((response) => response.json())
+      .then((data) => setProperty(data))
+      .catch((error) =>
+        console.error("Error fetching property details:", error)
+      );
+
+    fetch(`http://localhost:3000/reviews?houseId=${id}`)
+      .then((response) => response.json())
+      .then((data) => setReviews(data))
+      .catch((error) => console.error("Error fetching reviews:", error));
+  }, [id]);
 
   function handleInputChange(event) {
     setNewReview(event.target.value);
   }
+
 
   function handleSubmitReview() {
     fetch("http://localhost:3000/reviews", {
@@ -28,7 +40,7 @@ function HouseDetailComponent({ selectedHouse, onClose }) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        houseId: selectedHouse.id,
+        houseId: property.id,
         review: newReview,
       }),
     })
@@ -42,25 +54,35 @@ function HouseDetailComponent({ selectedHouse, onClose }) {
       });
   }
 
-//   //function to handle page close
-//   function handleClose() {
-//     setSelectedHouse(null);
-//   }
-
-  function handlePricing(){
-    // Redirect to pricing options page
-    history.push("/pricing-options");
+  function handlePricing() {
+    setRedirectToPricing(true);
   }
 
-  return selectedHouse ? (
+  if (redirectToPricing) {
+    return <Navigate to="/mortgage" />;
+  }
+
+  function handleClose() {
+    setRedirectToHome(true);
+  }
+
+  if (redirectToHome) {
+    return <Navigate to="/listings" />;
+  }
+
+  return property ? (
     <div className="house-details">
       <div className="details">
-        <h2>{selectedHouse.title}</h2>
-        <img src={selectedHouse.image} alt={selectedHouse.title} /> <br />
-        <p>{selectedHouse.description}</p>
-        <p>Bedrooms: {selectedHouse.bedrooms}</p>
-        <p>Status: {selectedHouse.status}</p>
-        <p>Contact: {selectedHouse.contact}</p>
+        <h2>{property.title}</h2>
+        <img src={property.image} alt={property.title} /> <br />
+        <div className="all-details">
+          {/* <p>{property.description}</p> */}
+          <h5>Price: {property.price}</h5>
+          <h5>Bedrooms: {property.bedrooms}</h5>
+          <h5>Location: {property.location} County</h5>
+          <h5>Status: {property.status}</h5>
+          <h5>Contact: {property.contact}</h5>
+        </div>
       </div>
       <div className="reviews-container">
         {reviews.length > 0 ? (
@@ -83,10 +105,10 @@ function HouseDetailComponent({ selectedHouse, onClose }) {
       </div>
       <div className="pricing-close">
         <button onClick={handlePricing}>Pricing options</button> <br />
-        <button onClick={onClose}>Close</button>
+        <button onClick={handleClose}>Close</button>
       </div>
     </div>
   ) : null;
-}
+};
 
 export default HouseDetailComponent;
