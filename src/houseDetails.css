@@ -1,6 +1,6 @@
 
 .house-details {
-  height: 1110px;
+  height: auto;
   margin: 10px auto;
   color: black;
   display: flex;
@@ -70,7 +70,7 @@ button {
 .pricing-close {
   height: 30px;
   padding: 30px;
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 .pricing-close button {
