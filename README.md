@@ -17,20 +17,20 @@ Nyumbani is a web application that allows users to search for different houses, 
 - JavaScript
 - HTML/CSS
 - JSON Server
-- API Endpoints
+- Figma
 
 ## Getting Started
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/nyumbani-web-app.git
+   git clone git@github.com:Bashu-011/Nyumbani_App.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd nyumbani-web-app
+   cd Nyumbani_App
    ```
 
 3. Install dependencies:
@@ -48,10 +48,10 @@ Nyumbani is a web application that allows users to search for different houses, 
 5. Start the React app:
 
    ```bash
-   npm start
+   npm run dev
    ```
 
-6. Open your browser and visit `http://localhost:3000` to view the Nyumbani Web App.
+6. Open your browser and visit `http://localhost:5173` to view the Nyumbani Web App.
 
 ## Usage
 
@@ -77,4 +77,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Feel free to modify and recreate this
+Feel free to modify and recreate this.
