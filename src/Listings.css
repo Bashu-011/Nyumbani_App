@@ -4,6 +4,9 @@
   margin: 4px;
   cursor: pointer;
 }
+.activePage {
+  color: #c719ea;
+}
 
 .listings-container {
     max-width: 1500px;

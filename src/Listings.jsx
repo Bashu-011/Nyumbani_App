@@ -104,7 +104,7 @@ const Listings = () => {
             <a
               key={index}
               onClick={() => paginate(index + 1)}
-              className="paginationList"
+              className={currentPage === index + 1 ? "activePage paginationList" : "paginationList"}
             >
               {index + 1}
             </a>
