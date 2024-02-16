@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import HouseDetails from "./HouseDetails";
 import Listings from "./Listings";
 import Mortgage from "./Mortgage";
+import { BrowserRouter, Route } from "react-router-dom"
 
 function App() {
     return (
