@@ -2,14 +2,15 @@ import React, { useState, useEffect } from "react";
 import { useParams, Navigate } from "react-router-dom";
 import "./houseDetails.css"
 
+
 const HouseDetailComponent = () => {
+  // Setting variables for reviews.
   const [reviews, setReviews] = useState([]);
   const [newReview, setNewReview] = useState("");
 
   const { id } = useParams();
   const [property, setProperty] = useState(null);
 
-  //const history = useHistory()
 
   const [redirectToHome, setRedirectToHome] = useState(false);
   const [redirectToPricing, setRedirectToPricing] = useState(false);
@@ -32,7 +33,7 @@ const HouseDetailComponent = () => {
     setNewReview(event.target.value);
   }
 
-
+// Handles the posting of reviews to the backend
   function handleSubmitReview() {
     fetch("http://localhost:3000/reviews", {
       method: "POST",
@@ -54,6 +55,7 @@ const HouseDetailComponent = () => {
       });
   }
 
+  // Handles redirects to the mortgage and listings.
   function handlePricing() {
     setRedirectToPricing(true);
   }
@@ -70,18 +72,21 @@ const HouseDetailComponent = () => {
     return <Navigate to="/listings" />;
   }
 
+  //  Displays the house details.
   return property ? (
     <div className="house-details">
       <div className="details">
-        <h2>{property.title}</h2>
+        <h2 style={{textAlign:'center'}}>{property.title}</h2>
         <img src={property.image} alt={property.title} /> <br />
         <div className="all-details">
           {/* <p>{property.description}</p> */}
-          <h5>Price: {property.price}</h5>
-          <h5>Bedrooms: {property.bedrooms}</h5>
-          <h5>Location: {property.location} County</h5>
-          <h5>Status: {property.status}</h5>
-          <h5>Contact: {property.contact}</h5>
+          <p><b>Price:</b> {property.price}</p>
+          <p><b>Bedrooms:</b> {property.bedrooms}</p>
+          <p><b>Location:</b> {property.location} County</p>
+          <p><b>Status: </b> {property.type}</p>
+          <p><b>Size: </b> {property.squareFootage} square feet</p>
+          <p><b>Amenities:</b> {property.propertyFeatures.join(", ")}</p>
+          <p><b>Contact: </b> {property.contactInformation.name}, {property.contactInformation.phone}, {property.contactInformation.email}</p>
         </div>
       </div>
       <div className="reviews-container">
@@ -104,7 +109,7 @@ const HouseDetailComponent = () => {
         <button onClick={handleSubmitReview}>Submit Review</button> <br />
       </div>
       <div className="pricing-close">
-        <button onClick={handlePricing}>Pricing options</button> <br />
+        <button onClick={handlePricing}>Pricing options</button> 
         <button onClick={handleClose}>Close</button>
       </div>
     </div>

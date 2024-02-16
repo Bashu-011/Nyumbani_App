@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #8ec5e0;
     margin: 0;
     padding: 0;
   }
@@ -12,7 +12,8 @@ body {
   
   .header {
     text-align: center;
-    color: #00bfff;
+    color: #f8f7f7;
+    font-weight: bold;
   }
   
   .mortgage-calculator-container {
@@ -42,14 +43,14 @@ body {
   }
   
   .button {
-    background-color: #00bfff;
+    background-color: #91d1e7;
     color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 20px; /* Adjust the margin-top value to move the button down */
+    margin-top: 20px; 
 }
 
   
@@ -59,7 +60,7 @@ body {
   
   .output-section {
     text-align: center;
-    color: #00bfff;
+    color: #0e0e0e;
     font-weight: 800;
   }
   
@@ -75,13 +76,18 @@ body {
   
   .banks {
     display: flex;
+    align-items: center;
   }
   
-  .banks a {
-    margin-right: 100px; /* Adjust the margin as needed */
+  .banks img  {
+    margin-right: 100px; 
+    width: 200px;
+    height: 120px;
+  
   }
   
   .banks a:last-child {
-    margin-right: 0; /* Remove margin from the last image */
+    margin-right: 0; 
   }
+
     

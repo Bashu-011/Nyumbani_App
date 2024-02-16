@@ -1,6 +1,6 @@
 import "./Footer.css";
 
-
+// function for the footer.
 function Footer() {
   return (
     <footer className="footer-distributed">
@@ -40,12 +40,12 @@ function Footer() {
         <span>About the company</span>
         For real estate supports
       </p>
-
+ {/* these are the icons links */}
       <div className="footer-icons">
          <a href="#"><i className="fa fa-facebook"></i></a>
          <a href="#"><i className="fa fa-twitter"></i></a>
-         <a href="#"><i className="fa fa-linkedin"></i></a> {/* Use fa-linkedin for LinkedIn */}
-         <a href="#"><i className="fa fa-snapchat-ghost"></i></a> {/* Use fa-snapchat-ghost for Snapchat */}
+         <a href="#"><i className="fa fa-linkedin"></i></a> 
+         <a href="#"><i className="fa fa-snapchat-ghost"></i></a>
      </div>
 
     </div>
