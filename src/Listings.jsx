@@ -1,18 +1,20 @@
 // Listings.jsx
+
 import React, { useState, useEffect } from 'react';
 import './Listings.css';
-import NavBar from './NavBar';
 import { Link } from 'react-router-dom';
+import NavBar from './NavBar';
+import logoImage from "./homeImages/Logo White.png";
 
+// declaring the variables for the filter search.
 const Listings = () => {
   const [listings, setListings] = useState([]);
   const [filteredListings, setFilteredListings] = useState([]);
   const [filter, setFilter] = useState('');
 
+  // fetching the listings from db.json
   useEffect(() => {
-
-    // fetching from db.json.
-
+   
     fetch('http://localhost:3000/listings')
       .then((response) => response.json())
       .then((data) => {
@@ -22,6 +24,7 @@ const Listings = () => {
       .catch((error) => console.error('Error fetching listings:', error));
   }, []);
 
+// handles the filter function 
   const handleFilterChange = (event) => {
     const newFilter = event.target.value.toLowerCase();
     setFilter(newFilter);
@@ -30,19 +33,22 @@ const Listings = () => {
 
   const applyFilters = (textFilter) => {
     const filteredResults = listings.filter((listing) => {
-      const titleMatch = listing.title.toLowerCase().includes(textFilter);
-      const descriptionMatch = listing.description.toLowerCase().includes(textFilter);
-      
-      return titleMatch || descriptionMatch;
+      // Check if the filter text matches any property of the listing
+      return Object.values(listing).some((value) =>
+        String(value).toLowerCase().includes(textFilter)
+      );
     });
 
     setFilteredListings(filteredResults);
   };
 
+  //  displays the listing in the container.
   return (
-
     <div className="listings-container">
-       <NavBar />
+       <div style={{ position: 'absolute', top: '-160px', left: '-130px', right: 0, padding: '10px 20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 1000 }}>
+      <img src={logoImage} alt="Logo White" width="400px" />
+      <NavBar />
+      </div>
       <h2 className="listings-title">Real Estate Listings</h2>
       <div className="search-bar">
         <label htmlFor="filter">Filter by Keyword or Location:</label>
@@ -64,8 +70,12 @@ const Listings = () => {
                 <strong>Location:</strong> {listing.location}
               </p>
               <p>
-                <strong>Price:</strong> {listing.price}
+                 <strong>Status:</strong> {listing.type}
               </p>
+              <p>
+                <strong>Price:</strong> {listing.price}
+              </p> 
+              {/* links to specific house details */}
               <Link to={`/property/${listing.id}`}>
                 <button>View Details</button>
               </Link>

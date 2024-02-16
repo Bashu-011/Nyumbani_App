@@ -1,13 +1,13 @@
 
 .house-details {
-  height: 900px;
+  height: 1110px;
   margin: 10px auto;
   color: black;
   display: flex;
   flex-wrap: wrap;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 70%;
-  background-color: #8ec5e0;
+  background-color: #f8fcfe;
  
 
 }
@@ -21,9 +21,17 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.details img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+   
+}
+
 .reviews-container {
-  height: auto;
-  width: 400px;
+  height: 200px;
+  width: 350px;
   margin: 20px 10px;
   background-color: rgb(65, 64, 64);
   padding: 20px;
@@ -36,7 +44,6 @@
   border: 1px solid rgb(232, 229, 229);
   border-radius: 10px;
   padding: 5px 10px;
-  font-weight: bold;
   border: 1px solid black;
 }
 
@@ -68,5 +75,6 @@ button {
 
 .pricing-close button {
   margin-top: 5px;
+  margin-right: 20px;
   
 }
