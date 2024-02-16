@@ -1,30 +1,26 @@
-// Listings.jsx
-
-import React, { useState, useEffect } from 'react';
-import './Listings.css';
-import { Link } from 'react-router-dom';
-import NavBar from './NavBar';
+import React, { useState, useEffect } from "react";
+import "./Listings.css";
+import { Link } from "react-router-dom";
+import NavBar from "./NavBar";
 import logoImage from "./homeImages/Logo White.png";
 
-// declaring the variables for the filter search.
 const Listings = () => {
   const [listings, setListings] = useState([]);
   const [filteredListings, setFilteredListings] = useState([]);
-  const [filter, setFilter] = useState('');
+  const [filter, setFilter] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const [listingsPerPage] = useState(9); // Change the number of listings per page here
 
-  // fetching the listings from db.json
   useEffect(() => {
-   
-    fetch('http://localhost:3000/listings')
+    fetch("http://localhost:3000/listings")
       .then((response) => response.json())
       .then((data) => {
         setListings(data);
         setFilteredListings(data);
       })
-      .catch((error) => console.error('Error fetching listings:', error));
+      .catch((error) => console.error("Error fetching listings:", error));
   }, []);
 
-// handles the filter function 
   const handleFilterChange = (event) => {
     const newFilter = event.target.value.toLowerCase();
     setFilter(newFilter);
@@ -33,7 +29,6 @@ const Listings = () => {
 
   const applyFilters = (textFilter) => {
     const filteredResults = listings.filter((listing) => {
-      // Check if the filter text matches any property of the listing
       return Object.values(listing).some((value) =>
         String(value).toLowerCase().includes(textFilter)
       );
@@ -42,12 +37,44 @@ const Listings = () => {
     setFilteredListings(filteredResults);
   };
 
-  //  displays the listing in the container.
+  const indexOfLastListing = currentPage * listingsPerPage;
+  const indexOfFirstListing = indexOfLastListing - listingsPerPage;
+  const currentListings = filteredListings.slice(
+    indexOfFirstListing,
+    indexOfLastListing
+  );
+
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+  const nextPage = () => {
+    if (currentPage < Math.ceil(filteredListings.length / listingsPerPage)) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
+  const prevPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
   return (
     <div className="listings-container">
-       <div style={{ position: 'absolute', top: '-160px', left: '-130px', right: 0, padding: '10px 20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 1000 }}>
-      <img src={logoImage} alt="Logo White" width="400px" />
-      <NavBar />
+      <div
+        style={{
+          position: "absolute",
+          top: "-160px",
+          left: "-130px",
+          right: 0,
+          padding: "10px 20px",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          zIndex: 1000,
+        }}
+      >
+        <img src={logoImage} alt="Logo White" width="400px" />
+        <NavBar />
       </div>
       <h2 className="listings-title">Real Estate Listings</h2>
       <div className="search-bar">
@@ -60,7 +87,7 @@ const Listings = () => {
         />
       </div>
       <div className="listings-grid">
-        {filteredListings.map((listing) => (
+        {currentListings.map((listing) => (
           <div key={listing.id} className="listing-card">
             <img src={listing.image} alt={listing.title} />
             <div className="listing-details">
@@ -70,18 +97,33 @@ const Listings = () => {
                 <strong>Location:</strong> {listing.location}
               </p>
               <p>
-                 <strong>Status:</strong> {listing.type}
+                <strong>Status:</strong> {listing.type}
               </p>
               <p>
                 <strong>Price:</strong> {listing.price}
-              </p> 
-              {/* links to specific house details */}
+              </p>
               <Link to={`/property/${listing.id}`}>
                 <button>View Details</button>
               </Link>
             </div>
           </div>
         ))}
+      </div>
+      <div className="pagination" style={{ margin: "20px" }}>
+        <button onClick={prevPage}>Previous</button>
+        {Array.from(
+          { length: Math.ceil(filteredListings.length / listingsPerPage) },
+          (_, index) => (
+            <a
+              key={index}
+              onClick={() => paginate(index + 1)}
+              className="paginationList"
+            >
+              {index + 1}
+            </a>
+          )
+        )}
+        <button onClick={nextPage}>Next</button>
       </div>
     </div>
   );

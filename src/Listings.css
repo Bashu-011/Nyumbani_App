@@ -1,5 +1,9 @@
 /* Listings.css */
 
+.paginationList{
+  margin: 4px;
+  cursor: pointer;
+}
 
 .listings-container {
     max-width: 1500px;
