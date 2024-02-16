@@ -60,20 +60,7 @@ const Listings = () => {
 
   return (
     <div className="listings-container">
-      <div
-        style={{
-          position: "absolute",
-          top: "-160px",
-          left: "-130px",
-          right: 0,
-          padding: "10px 20px",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          zIndex: 1000,
-        }}
-      >
-        <img src={logoImage} alt="Logo White" width="400px" />
+      <div>
         <NavBar />
       </div>
       <h2 className="listings-title">Real Estate Listings</h2>
