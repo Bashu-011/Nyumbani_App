@@ -56,11 +56,11 @@ function Home() {
           }}>View Listings </button> </Link>
         </div>
       </div>
-      <table style={{ float: 'right', width: '40%', marginRight: '0%', top: '900px', marginTop: '-395px' }}>
+      <table style={{ float: 'right', width: '40%', marginRight: '0%', top: '1500px', marginTop: '-450px' }}>
         <tbody>
           <tr>
             <td>
-              <Carousel showArrows={true} showIndicators={false} showThumbs={false} autoPlay={true} interval={1000} style={{ width: '100%' }}>
+              <Carousel showArrows={true} showIndicators={false} showThumbs={false} autoPlay={true} interval={2000} style={{ width: '100%' }}>
                 <div>
                   <img src={sittingRoomImage} alt="Sitting Room" style={{ width: '100%' }} />
                 </div>
