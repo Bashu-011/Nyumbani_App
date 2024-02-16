@@ -8,7 +8,7 @@ Nyumbani is a web application that allows users to search for different houses, 
 - View detailed listings for available houses.
 - Determine availability for sale or for rent.
 - Mortgage calculator feature for houses available for sale.
-- Built with React framework.
+- Built using React framework.
 - Data fetched from `db.json`.
 
 ## Technologies Used
@@ -56,7 +56,7 @@ Nyumbani is a web application that allows users to search for different houses, 
 ## Usage
 
 - Upon visiting the site, users can browse through available listings.
-- Use the search functionality to filter houses based on criteria such as location.
+- Use the search functionality to filter houses based on criteria such as location or listing type.
 - Click on a listing to view more details.
 - For houses available for sale, users can utilize the mortgage calculator feature by entering relevant information such as loan amount, interest rate, and loan term.
 

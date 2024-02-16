@@ -84,11 +84,15 @@ const Listings = () => {
                 <strong>Location:</strong> {listing.location}
               </p>
               <p>
+                <strong>city:</strong> {listing.city}
+              </p>
+              <p>
                 <strong>Status:</strong> {listing.type}
               </p>
               <p>
                 <strong>Price:</strong> {listing.price}
               </p>
+              
               <Link to={`/property/${listing.id}`}>
                 <button>View Details</button>
               </Link>
