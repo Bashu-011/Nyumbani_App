@@ -12,7 +12,7 @@ const Listings = () => {
   const [listingsPerPage] = useState(9); // Change the number of listings per page here
 
   useEffect(() => {
-    fetch("http://localhost:3000/listings")
+    fetch("http://127.0.0.1:5000/listings")
       .then((response) => response.json())
       .then((data) => {
         setListings(data);
@@ -84,11 +84,15 @@ const Listings = () => {
                 <strong>Location:</strong> {listing.location}
               </p>
               <p>
+                <strong>city:</strong> {listing.city}
+              </p>
+              <p>
                 <strong>Status:</strong> {listing.type}
               </p>
               <p>
                 <strong>Price:</strong> {listing.price}
               </p>
+              
               <Link to={`/property/${listing.id}`}>
                 <button>View Details</button>
               </Link>
@@ -104,7 +108,7 @@ const Listings = () => {
             <a
               key={index}
               onClick={() => paginate(index + 1)}
-              className="paginationList"
+              className={currentPage === index + 1 ? "activePage paginationList" : "paginationList"}
             >
               {index + 1}
             </a>
