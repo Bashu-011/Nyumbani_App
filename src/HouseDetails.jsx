@@ -11,14 +11,14 @@ const HouseDetailComponent = () => {
   const [redirectToPricing, setRedirectToPricing] = useState(false);
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:5000/listings/${id}`)
+    fetch(`https://nyumbani-server.onrender.com/listings/${id}`)
       .then((response) => response.json())
       .then((data) => setProperty(data))
       .catch((error) =>
         console.error("Error fetching property details:", error)
       );
 
-    fetch(`http://127.0.0.1:5000/reviews?houseId=${id}`)
+    fetch(`https://nyumbani-server.onrender.com/reviews?houseId=${id}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Reviews not found");
@@ -34,7 +34,7 @@ const HouseDetailComponent = () => {
   }
 
   function handleSubmitReview() {
-    fetch("http://127.0.0.1:5000/reviews", {
+    fetch("https://nyumbani-server.onrender.com/reviews", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
