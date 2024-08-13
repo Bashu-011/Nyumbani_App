@@ -12,7 +12,7 @@ const Listings = () => {
   const [listingsPerPage] = useState(9); // Change the number of listings per page here
 
   useEffect(() => {
-    fetch("http://localhost:3000/listings")
+    fetch("https://nyumbani-server.onrender.com/listings")
       .then((response) => response.json())
       .then((data) => {
         setListings(data);
@@ -84,11 +84,15 @@ const Listings = () => {
                 <strong>Location:</strong> {listing.location}
               </p>
               <p>
+                <strong>city:</strong> {listing.city}
+              </p>
+              <p>
                 <strong>Status:</strong> {listing.type}
               </p>
               <p>
                 <strong>Price:</strong> {listing.price}
               </p>
+              
               <Link to={`/property/${listing.id}`}>
                 <button>View Details</button>
               </Link>
